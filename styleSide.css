@@ -90,10 +90,10 @@ a.disable {
 .content {
     margin: 55px 50px 0px 75px;
     padding-right: 10px;
-    word-break: break-all;
     height: 700px;
     overflow-x: hidden;
     overflow-y: scroll;
+    font-size: 0.9em;
 }
 
 .content::-webkit-scrollbar {
@@ -112,10 +112,9 @@ a.disable {
     background: #555; 
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    flex-direction: row;
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
   
