@@ -1,0 +1,121 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: url(./images/animatea.png), url(./images/background2.png); 
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover;
+  background-size: auto, cover;
+  background-repeat: no-repeat;
+  background-position: bottom left, center center fixed;
+  margin: 0;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    margin: 0;
+    background: none;
+    background-color: rgba(255,255,255,0.0);
+    background-image: url(./images/cloudnav2.png);
+    background-repeat: repeat-x;
+}
+
+
+@keyframes change {
+    0% {opacity: 0}
+    25% { opacity: 0;}
+    50% { opacity: 0.3;}
+    65% { opacity: 0.5;}
+    80% { opacity: 0.7;}
+    90% { opacity: 0.9;}
+    100% {opacity: 1;}
+}
+
+
+li {
+    list-style: none;
+    padding: 20px;
+}
+
+
+nav a {
+    color: black;
+    text-decoration: none;
+    transition-duration: 1s;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: rgba(256,256,256,0.5);
+    text-shadow: 0px 0px 24px 5px rgba(245,228,159,1);
+    border-radius: 30px;
+    transition-duration: 1s;
+    border-bottom: 1px solid black;
+}
+
+
+a {
+    color: rgba(245,228,159,1);
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 2px 2px 5px rgba(245,228,159,1);
+    border-radius: 5px;
+}
+
+a.disable {
+    pointer-events: none;
+    cursor: default;
+    color: black;
+    font-weight: bold;
+  }
+
+
+.container {
+    margin: auto;
+    padding: 5px 50px 30px 30px;
+    color: black;
+    font-size: 1.2em;
+    background: none;
+    background-color: rgba(255,255,255,0.0);
+    background-image: url(./images/div2.png);
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 800px;
+}
+
+.content {
+    margin: 55px 50px 0px 75px;
+    padding-right: 10px;
+    word-break: break-all;
+    height: 700px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar {
+    width: 5px;
+}
+  
+.content::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+.content::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    flex-direction: row;
+}
+  
